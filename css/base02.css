@@ -27,61 +27,79 @@
  header {
    text-align:center;
  }
- /*logoの設定*/
- header h1 {
-   margin:0 auto;
-   padding:15px 5px 7px 5px;
-   width:90%;
- }
- header h1 img {
-   width:100%;
-   max-width:290px;
- }
- /*s_navの設定*/
- header {
-   /*#s_navのセンタリングに必要*/
-   position:relative;
-   overflow:hidden;
- }
- header ul#s_nav {
-   margin-bottom:15px;
+ header #menu_bar{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  background-color: rgba(255, 255, 255, .75);
+}
+header #under-bar{
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  left: 0;
+  background-image: url("../images/header-line.png");
+  background-size: 70% 10px;  
+}
+/*画像のスライドソショー*/
+header .bxslider{
+  /*margin-top: 100px;*/
+}
+/*logoの設定*/
+header h1 {
+ margin:0 auto;
+ padding:15px 5px 7px 5px;
+ width:90%;
+}
+header h1 img {
+ width:100%;
+ max-width:310px;
+}
+/*s_navの設定*/
+header {
+ /*#s_navのセンタリングに必要*/
+ position:relative;
+ overflow:hidden;
+}
+header ul#s_nav {
+ margin-bottom:15px;
 
-   /*#s_navのセンタリングに必要*/
-   position:relative;
-   left:50%;
-   float:left;
- }
- header ul#s_nav li {
-   float:left;
+ /*#s_navのセンタリングに必要*/
+ position:relative;
+ left:50%;
+ float:left;
+}
+header ul#s_nav li {
+ float:left;
 
-   /*#s_navのセンタリングに必要*/
-   position:relative;
-   left: -50%;
- }
- header ul#s_nav li a {
-   display:block;
-   font-size:0.8em;
-   margin-right:20px;
-   padding-left:20px;
- }
- header ul#s_nav li.contact a {
-   background:url(../images/icn_contact.jpg) no-repeat left center;
- }
- header ul#s_nav li.news a {
-   background:url(../images/icn_news.jpg) no-repeat left center;
- }
- header ul#s_nav li.sitemap a {
-   background:url(../images/icn_sitemap.jpg) no-repeat left center;	
- }
- /*topImageの設定*/
- header p {
-   width:100%;
- }
- header p img {
-   width:100%;
-   height:auto;
-   max-width:960px;
- }
+ /*#s_navのセンタリングに必要*/
+ position:relative;
+ left: -50%;
+}
+header ul#s_nav li a {
+ display:block;
+ font-size:0.8em;
+ margin-right:20px;
+ padding-left:20px;
+}
+header ul#s_nav li.contact a {
+ background:url(../images/icn_contact.jpg) no-repeat left center;
+}
+header ul#s_nav li.news a {
+ background:url(../images/icn_news.jpg) no-repeat left center;
+}
+header ul#s_nav li.sitemap a {
+ background:url(../images/icn_sitemap.jpg) no-repeat left center;	
+}
+/*topImageの設定*/
+header p {
+ width:100%;
+}
+header p img {
+ width:100%;
+ height:auto;
+ max-width:960px;
+}
 
 /*==========================================
  グローバルナビゲーションのスタイル
@@ -103,6 +121,9 @@ nav ul li:nth-child(odd) {
 nav ul li a{
   display: block;
   width: 100%;
+}
+nav ul li a p{
+  line-height: 3.2em;
 }
 /*==========================================
  コンテンツエリア全体のスタイル
@@ -139,6 +160,7 @@ div#contents section#work article p {
   line-height: 2.0em;
   padding: 0 15px;
 }
+
 /*==========================================
  コンテンツエリア -> NEWSのスタイル
  ===========================================*/
@@ -214,6 +236,9 @@ footer div small {
   font-size: 0.6em;
 }
 
+/*==========================================
+ メディアクエリ
+ ===========================================*/
 
 /* PC向けおよび大型タブレット向けのレイアウトの指定：769px～960px */
 @media only screen and (min-width: 769px) {
@@ -234,16 +259,21 @@ footer div small {
  }
  header ul#s_nav {
    float:right;
-   margin-top:20px;
+   margin-top:50px;
    /*#s_navのセンタリングの解除*/
    position:static;
  }
- header ul#s_nav li {
-   float:left;
-   /*#s_navのセンタリングの解除*/
-   position:static;
- }
- nav {
+
+ header ul#s_nav li a:hover{
+  color: hsl(197, 70%, 53%); /*blue*/
+}
+
+header ul#s_nav li {
+ float:left;
+ /*#s_navのセンタリングの解除*/
+ position:static;
+}
+nav {
   text-align: center;
   border-bottom: 3px double #000;
   margin: 10px auto 15px auto;
@@ -279,9 +309,6 @@ div#contents section#work article p {
   font-size: 0.8em;
   line-height: 2.0em;
 }
-strong{
-  font-size: 1.5em;
-}
 
 }
 
@@ -295,8 +322,8 @@ strong{
  }
  header h1 {
   width: 400px;
- }
- nav {
+}
+nav {
   max-width: 960px;
 }
 nav ul{
@@ -332,9 +359,6 @@ div#contents section#information {
 }
 footer {
   text-align: center;
-}
-strong{
-  font-size: 1.5em;
 }
 
 
