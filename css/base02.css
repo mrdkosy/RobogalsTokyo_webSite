@@ -38,6 +38,7 @@ header #under-bar{
   height: 10px;
   position: fixed;
   left: 0;
+  top: 0;
   background-image: url("../images/header-line.png");
   background-size: 70% 10px;  
 }
