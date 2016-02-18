@@ -32,7 +32,8 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	padding-top: 80px;
+	/*headerのpadding*/
+	/*padding-top: 80px;*/
 	background: #fff;
 	
 	/*fix other elements on the page moving (on Chrome)*/
