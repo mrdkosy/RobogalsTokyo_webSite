@@ -63,7 +63,6 @@ header {
 }
 header ul#s_nav {
  margin-bottom:15px;
-
  /*#s_navのセンタリングに必要*/
  position:relative;
  left:50%;
@@ -239,7 +238,11 @@ footer div small {
 /*==========================================
  メディアクエリ
  ===========================================*/
-
+@media only screen and (max-width: 769px) {
+  header ul#s_nav {
+    display: none;
+  }
+}
 /* PC向けおよび大型タブレット向けのレイアウトの指定：769px～960px */
 @media only screen and (min-width: 769px) {
   /*logoの設定*/
