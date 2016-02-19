@@ -19,7 +19,7 @@
  }
  a:hover {
    color:#333;
-   text-decoration:underline;
+   text-decoration:none;
  }
 /*==========================================
  ヘッダーのスタイル
@@ -29,7 +29,9 @@
  }
  header #menu_bar{
   width: 100%;
-  /*position: fixed;*/
+  position: fixed;
+  margin: 0;
+  padding: 0;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, .75);
@@ -37,11 +39,14 @@
 header #under-bar{
   width: 100%;
   height: 10px;
-  /*position: fixed;*/
+  position: fixed;
+  margin: 0;
+  padding: 0;
   left: 0;
   top: 0;
   background-image: url("../images/header-line.png");
   background-size: 70% 10px;  
+  z-index: 1;
 }
 /*画像のスライドソショー*/
 header .bxslider{
@@ -122,16 +127,18 @@ nav ul li:nth-child(odd) {
 nav ul li a{
   display: block;
   width: 100%;
+  text-decoration: none;
 }
+
 nav ul li a p{
   line-height: 3.2em;
+  border: solid 2px rgba(0, 0, 0, 0);
 }
 /*==========================================
  コンテンツエリア全体のスタイル
  ===========================================*/
  div#contents {
-  background: url(../images/bg_footer.jpg) no-repeat bottom;
-  padding-bottom: 90px;
+  padding-bottom: 0px;
 }
 /*==========================================
  コンテンツエリア -> WORKSのスタイル
@@ -226,7 +233,10 @@ div#contents section#information ul li img {
  フッターのスタイル
  ===========================================*/
  footer {
-  border-top: 10px solid #000;
+  background-color: hsl(197, 70%, 50%);
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 footer div {
   margin: 20px 0 0 20px;
@@ -238,13 +248,24 @@ footer div p {
 footer div small {
   font-size: 0.6em;
 }
+div#footertop{
+  margin: -50px 0 30px 0;
+  height: 10px;
+  background: url(../images/header-line.png);
+  background-size: 70% 10px;
+
+}
 
 /*==========================================
  メディアクエリ
  ===========================================*/
-@media only screen and (max-width: 769px) {
+ /*スマホ*/
+ @media only screen and (max-width: 769px) {
   header ul#s_nav {
     display: none;
+  }
+  header #menu_bar, header #under-bar{
+    position: relative;
   }
 }
 /* PC向けおよび大型タブレット向けのレイアウトの指定：769px～960px */
@@ -273,6 +294,7 @@ footer div small {
 
  header ul#s_nav li a:hover{
   color: hsl(197, 70%, 53%); /*blue*/
+  text-decoration: underline;
 }
 
 header ul#s_nav li {
@@ -291,6 +313,7 @@ nav ul li {
   width: 16%;
   border-bottom: none;
   border-right: 1px dotted #000;
+  background-color: "#fff";
 }
 nav ul li:nth-child(odd) {
   width: 17%;
@@ -305,6 +328,9 @@ nav ul li.contact {
 }
 nav ul li a{
   display: block;
+}
+nav ul li p{
+  text-decoration: none;
 }
 div#contents section#work article {
   width: 33%;

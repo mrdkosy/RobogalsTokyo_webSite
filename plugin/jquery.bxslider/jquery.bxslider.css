@@ -33,15 +33,15 @@
 
 .bx-wrapper .bx-viewport {
 	/*headerのpadding*/
-	/*padding-top: 80px;*/
+	padding-top: 80px;
 	background: #fff;
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);
-    	-ms-transform: translatez(0);
-    	-o-transform: translatez(0);
-    	transform: translatez(0);
+	-ms-transform: translatez(0);
+	-o-transform: translatez(0);
+	transform: translatez(0);
 }
 
 .bx-wrapper .bx-pager,
@@ -201,3 +201,16 @@
 	font-size: .85em;
 	padding: 10px;
 }
+
+/*==========================================
+ メディアクエリ
+ ===========================================*/
+ /*スマホ*/
+ @media only screen and (max-width: 769px) {
+ 	.bx-wrapper .bx-viewport {
+ 		padding-top: 0;
+ 	}
+ }
+
+
+
