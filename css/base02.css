@@ -155,7 +155,7 @@ nav ul li a p{
   line-height: 3.2em;
   border: solid 2px rgba(0, 0, 0, 0);
 }
-nav p:hover{
+nav p:hover, nav p:active{
   border: solid 2px hsl(197, 70%, 53%);
   color: hsl(197, 70%, 53%);
   text-decoration: none;
