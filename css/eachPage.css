@@ -10,6 +10,13 @@
 	padding: 0 0 8px 15px;
 	margin-bottom: 35px;
 }
+.each h2{
+	font-size: 1.3em;
+	margin-bottom: 20px;
+}
+.each p, .each img{
+	margin-bottom: 50px;
+}
 .each p.en{
 	margin-top: 10px;
 	font-size: .75em;
@@ -31,15 +38,33 @@
 	width: 100%;
 }
 
-.eachContents p strong{
-	margin-bottom: 30px;
-	line-height: 1.8em;
-	padding-bottom: 2px;
-	border-bottom: 1px dotted #000;
-}
-.aboutRobogals .eachContents ul{
-list-style: 
-}
+/*==========================================
+ about.html
+ ===========================================*/
+ 
+ .eachContents p strong{
+ 	margin-bottom: 30px;
+ 	line-height: 1.8em;
+ 	padding-bottom: 2px;
+ 	border-bottom: 1px dotted #000;
+ }
+ .aboutRobogals .eachContents ul{
+ 	list-style: circle;
+ 	margin-left: 30px;
+ } 
+ .aboutRobogals .eachContents ul li{
+ 	font-size: 1.0em;
+ 	line-height: 1.4em;
+ 	margin-bottom: 2px;
+ }
+
+ .aboutRobogals a{
+ 	text-decoration: underline;
+ }
+ .aboutRobogals a:hover, .aboutRobogals a:active{
+ 	color: red;
+ 	text-decoration: underline;
+ }
  /*==========================================
  メディアクエリ
  ===========================================*/
@@ -50,6 +75,9 @@ list-style:
  	}
  	.eachContents{
  		width: 80%;
+ 	}
+ 	.each p.en{
+ 		display: none;
  	}
  }
  /* PC向けおよび大型タブレット向けのレイアウトの指定：769px～960px */

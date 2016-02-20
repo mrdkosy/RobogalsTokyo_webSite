@@ -325,6 +325,13 @@ footer #p{
   header #menu_bar, header #under-bar{
     position: relative;
   }
+  footer #p{
+    margin-top: 150px;
+  }
+  #sitemap{
+    margin-left: 10px;
+  }
+
 }
 /* PC向けおよび大型タブレット向けのレイアウトの指定：769px～960px */
 @media only screen and (min-width: 769px) {
@@ -402,6 +409,7 @@ div#contents section#work article p {
   font-size: 0.8em;
   line-height: 2.0em;
 }
+
 
 }
 
