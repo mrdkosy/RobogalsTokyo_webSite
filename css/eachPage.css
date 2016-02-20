@@ -106,6 +106,15 @@ a .circle_menu{
  	.each p.en{
  		display: none;
  	}
+ 	.circle_menu{
+ 		width: 70px;
+ 		height: 70px;
+ 	}
+ 	a .circle_menu{
+ 		display: block;
+ 		margin: 0 5px 40px 0 ;
+
+ 	}
  }
  /* PC向けおよび大型タブレット向けのレイアウトの指定：769px～960px */
  @media only screen and (min-width: 768px) {
