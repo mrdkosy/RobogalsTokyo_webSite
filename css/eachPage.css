@@ -1,0 +1,65 @@
+.each{
+	padding-top: 130px;
+	font-weight: normal;
+}
+.each h1{
+	font-size: 1.5em;
+	font-weight: bold;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 0 0 8px 15px;
+	margin-bottom: 35px;
+}
+.each p.en{
+	margin-top: 10px;
+	font-size: .75em;
+	color: #aaa;
+	letter-spacing: 1.2px;
+	line-height: 1.25em;
+}
+.each p.ja{
+	font-size: 1.0em;
+	line-height: 1.4em;
+}
+.eachContents{
+	width: 750px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.eachContents img{
+	width: 100%;
+}
+
+.eachContents p strong{
+	margin-bottom: 30px;
+	line-height: 1.8em;
+	padding-bottom: 2px;
+	border-bottom: 1px dotted #000;
+}
+.aboutRobogals .eachContents ul{
+list-style: 
+}
+ /*==========================================
+ メディアクエリ
+ ===========================================*/
+ /*スマホ*/
+ @media only screen and (max-width: 769px) {
+ 	.each{
+ 		padding-top: 40px;
+ 	}
+ 	.eachContents{
+ 		width: 80%;
+ 	}
+ }
+ /* PC向けおよび大型タブレット向けのレイアウトの指定：769px～960px */
+ @media only screen and (min-width: 768px) {
+ 	.eachContents{
+ 		width: 80%;
+ 	}
+ }
+
+ /* PC向けレイアウトの指定：961px以上では固定レイアウト */
+ @media only screen and (min-width: 961px) {
+ }
+

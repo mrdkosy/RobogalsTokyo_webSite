@@ -88,14 +88,32 @@ header ul#s_nav li a {
  margin-right:20px;
  padding-left:20px;
 }
+header ul#s_nav li.home a {
+  background:url(../images/icon/home-page.png) no-repeat left center;
+}
+header ul#s_nav li.about a {
+  background:url(../images/icon/question-in-circular-button.png) no-repeat left center;
+}
+header ul#s_nav li.event a {
+  background:url(../images/icon/election-event-on-a-calendar-with-star-symbol.jpg) no-repeat left center;
+}
+
 header ul#s_nav li.contact a {
- background:url(../images/icn_contact.jpg) no-repeat left center;
+ background:url(../images/icon/icn_contact.jpg) no-repeat left center;
 }
 header ul#s_nav li.news a {
- background:url(../images/icn_news.jpg) no-repeat left center;
+ background:url(../images/icon/icn_news.jpg) no-repeat left center;
 }
-header ul#s_nav li.sitemap a {
- background:url(../images/icn_sitemap.jpg) no-repeat left center;	
+header ul#s_nav li.people a {
+  background:url(../images/icon/people.png) no-repeat left center;
+}
+header ul#s_nav li.home a,
+header ul#s_nav li.about a,
+header ul#s_nav li.event a,
+header ul#s_nav li.contact a,
+header ul#s_nav li.news a,
+header ul#s_nav li.people a{
+  background-size: 13px;
 }
 /*topImageの設定*/
 header p {
@@ -237,26 +255,34 @@ div#contents section#information ul li img {
 /*==========================================
   サイトマップ
   ===========================================*/
-  urlset{
+  #sitemap{
     text-align: left;
     display: block;
-    width:300px;
-    margin: 10px auto;
+    margin: 10px 0px 10px 100px;
+    background: black;
   }
-  urlset ul{
+  #sitemap ul{
     float: left;
-    list-style-type: 
+    list-style-type: none;
+    margin-right: 28px;
+    line-height: 1.15em;
   }
-  urlset ul h3{
+  #sitemap ul h3{
     font-size: 0.85em;
   }
-  urlset ul li{
+  #sitemap ul li{
     font-size: 0.8em;
     background: url(../images/icn_arrow.png) no-repeat center left;
-    background-size: 4px;
+    background-size: 3px;
     padding-left: 7px;
   }
-  
+  #sitemap a{
+    color: white;
+  }
+  #sitemap a:hover{
+    color: white;
+    text-decoration: underline;
+  }
 /*==========================================
  フッターのスタイル
  ===========================================*/
@@ -284,6 +310,9 @@ div#footertop{
   background-size: 70% 10px;
 
 }
+footer #p{
+  margin-top: 150px;
+}
 
 /*==========================================
  メディアクエリ
@@ -305,11 +334,12 @@ div#footertop{
    padding:15px 5px 7px 5px;
    width:320px;
    float:left;
+   margin-bottom: -50px;
  }
  header h1 img {
    width:100%;
  }
- header {
+ header{
    /*#s_navのセンタリングの解除*/
    position:static;
    overflow:visible;
@@ -335,6 +365,7 @@ nav {
   text-align: center;
   border-bottom: 3px double #000;
   margin: 10px auto 15px auto;
+  display: none;
 }
 nav ul li {
   text-align: center;
@@ -382,11 +413,16 @@ div#contents section#work article p {
    margin-left:auto;
    margin-right:auto;
  }
- header h1 {
-  width: 400px;
-}
-nav {
+ header ul#s_nav {
+   float:right;
+   margin-top:50px;
+   /*#s_navのセンタリングの解除*/
+   position:static;
+ }
+
+ nav {
   max-width: 960px;
+  display: none;
 }
 nav ul{
   margin-left: auto;
@@ -423,5 +459,33 @@ footer div{
   text-align: center;
 }
 
+}
 
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
