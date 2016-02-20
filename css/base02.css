@@ -140,6 +140,9 @@ nav ul li a p{
  div#contents {
   padding-bottom: 0px;
 }
+section{
+  margin-bottom: 80px;
+}
 /*==========================================
  コンテンツエリア -> WORKSのスタイル
  ===========================================*/
@@ -177,8 +180,9 @@ div#contents section#work article p {
 }
 div#contents section#news h2 {
   margin: 0 5px 15px 0;
-  background: url(../images/bg_headerLine.jpg) repeat-x bottom;
-  padding-bottom: 10px;
+  background: url(../images/09085023.png) repeat-x bottom;
+  padding-bottom: 13px;
+  background-size: 42px;
 }
 div#contents section#news article h3 {
   font-size: 0.7em;
@@ -207,8 +211,9 @@ div#contents section#news article p a:hover {
 div#contents section#information h2 {
   text-align: left;
   margin: 0 5px 15px 0;
-  background: url(../images/bg_headerLine.jpg) repeat-x bottom;
-  padding-bottom: 10px;
+  background: url(../images/09085023.png) repeat-x bottom;
+  padding-bottom: 13px;
+  background-size: 42px;
 }
 div#contents section#information ul li {
   width: 100%;
@@ -230,6 +235,29 @@ div#contents section#information ul li img {
   padding: 2px;
 }
 /*==========================================
+  サイトマップ
+  ===========================================*/
+  urlset{
+    text-align: left;
+    display: block;
+    width:300px;
+    margin: 10px auto;
+  }
+  urlset ul{
+    float: left;
+    list-style-type: 
+  }
+  urlset ul h3{
+    font-size: 0.85em;
+  }
+  urlset ul li{
+    font-size: 0.8em;
+    background: url(../images/icn_arrow.png) no-repeat center left;
+    background-size: 4px;
+    padding-left: 7px;
+  }
+  
+/*==========================================
  フッターのスタイル
  ===========================================*/
  footer {
@@ -237,6 +265,7 @@ div#contents section#information ul li img {
   color: white;
   padding-top: 50px;
   padding-bottom: 25px;
+  width: 100%;
 }
 footer div {
   margin: 20px 0 0 20px;
@@ -390,7 +419,7 @@ div#contents section#information {
   width: 49%;
   float: right;
 }
-footer {
+footer div{
   text-align: center;
 }
 
