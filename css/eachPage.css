@@ -38,6 +38,10 @@
 	width: 100%;
 }
 
+.eachContents h2{
+	margin-left: -20px;
+}
+
 a .circle_menu{
 	float: left;
 	margin: 0px 15px 40px 0;
@@ -91,6 +95,17 @@ a .circle_menu{
  	color: red;
  	text-decoration: underline;
  }
+
+ /*==========================================
+ event.html
+ ===========================================*/
+.eventInfo a{
+ 	text-decoration: underline;
+ }
+ .eventInfo a:hover, .eventInfo a:active{
+ 	color: red;
+ 	text-decoration: underline;
+  
  /*==========================================
  メディアクエリ
  ===========================================*/
