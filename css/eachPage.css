@@ -14,7 +14,7 @@
 	font-size: 1.3em;
 	margin-bottom: 20px;
 }
-.each p, .each img, .each div{
+.each img, .each div{
 	margin-bottom: 40px;
 }
 .each p.en{
@@ -71,7 +71,10 @@ a .circle_menu{
 /*==========================================
  about.html
  ===========================================*/
- 
+ .aboutRobogals p{
+ 	margin-bottom: 40px;
+ }
+
  .eachContents p strong{
  	margin-bottom: 30px;
  	line-height: 1.8em;
@@ -99,13 +102,29 @@ a .circle_menu{
  /*==========================================
  event.html
  ===========================================*/
-.eventInfo a{
+ .eventInfo .eachContents h2{
+ 	margin-top: 35px;
+ }
+ .eventInfo a{
  	text-decoration: underline;
+ 	display: inline-block;
  }
  .eventInfo a:hover, .eventInfo a:active{
  	color: red;
  	text-decoration: underline;
-}  
+ } 
+ .eventInfo li a{
+ 	display: inline-block;
+ 	font-size: .9em;
+ 	margin-top: 10px;
+ }
+ .eventInfo ul{
+ 	list-style-type: circle;
+ } 
+ .eventInfo li h3{
+ 	margin-bottom: 10px;
+ }
+
  /*==========================================
  メディアクエリ
  ===========================================*/
@@ -120,6 +139,9 @@ a .circle_menu{
  	}
  	.each p.en{
  		display: none;
+ 	}
+ 	.aboutRobogals .eachContents ul li{
+ 		font-size: .85em;
  	}
  	.circle_menu{
  		width: 70px;
