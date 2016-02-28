@@ -124,7 +124,30 @@ a .circle_menu{
  .eventInfo li h3{
  	margin-bottom: 10px;
  }
+/*==========================================
+ contact.html
+ ===========================================*/
+ .contactFM h3{
+ 	margin-top: 20px;
+ 	display: inline-block;
+ 	background: url(../images/icn_arrow.jpg) no-repeat right center;
+ 	background-size: .45em;
+ 	padding-right: 15px;
+ 	padding-top: 2px;
+ }
+ .contactFM p.ja{
+ 	margin-bottom: 30px;
+ }
 
+ .contactFM a{
+ 	margin-left: 15px;
+ 	font-size: .9em;
+ 	text-decoration: underline;
+ }
+ .contactFM a:hover{
+ 	text-decoration: underline;
+ 	color: red;
+ }
  /*==========================================
  メディアクエリ
  ===========================================*/
