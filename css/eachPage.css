@@ -128,21 +128,23 @@ a .circle_menu{
  contact.html
  ===========================================*/
  .contactFM h3{
- 	margin-top: 20px;
- 	display: inline-block;
- 	background: url(../images/icn_arrow.jpg) no-repeat right center;
+ 	margin-top: 30px;
+ 	margin-bottom: 10px;
+ 	/*display: inline-block;*/
+ 	/*background: url(../images/icn_arrow.jpg) no-repeat right center;*/
  	background-size: .45em;
- 	padding-right: 15px;
+ 	/*padding-right: 15px;*/
  	padding-top: 2px;
  }
  .contactFM p.ja{
- 	margin-bottom: 30px;
+ 	margin-bottom: 50px;
  }
-
  .contactFM a{
  	margin-left: 15px;
  	font-size: .9em;
+ 	width: auto;
  	text-decoration: underline;
+ 	word-break: break-all; 
  }
  .contactFM a:hover{
  	text-decoration: underline;
